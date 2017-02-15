@@ -46,6 +46,33 @@ p{
     text-align: center;
     
 }
+.alinear
+{
+ 
+    width: 90%;
+    
+}
+section .albutton
+{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    margin:0 auto;
+    
+}
+.btn
+{
+    color: #fff;
+    background-color:#ff00bf; 
+}
+.retornar a
+{
+   margin-top: 20px;
+    font-size: 40px;
+
+}
+
 
 
 
