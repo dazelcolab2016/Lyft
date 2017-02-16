@@ -1,3 +1,6 @@
+
+
+
 var lista =[
   {
     "name": "Afghanistan",
@@ -954,19 +957,14 @@ var lista =[
   }
 ];
 
-
-function init()
-{
-    listaPaises();
-}
-function listaPaises()
-{
+function init(){
     var htmlLista = document.getElementById("lista-paises");
     for (var i in lista)
         {
-        var html = '<li><a href="singup.html"><img src="'+lista[i].imagen+'" class="contry-login">'+lista[i].name+'</a></li>';
-            htmlLista.innerHTML+=html;
+        var html = '<li><a href="singup.html"><img src="'+lista[i].imagen+'" class="contry-login">'+lista[i].name +'</a></li>'; 
+            htmlLista.innerHTML += html;
         }
+
 
     var list = document.getElementsByTagName("li");
     console.log(list);
@@ -974,17 +972,15 @@ function listaPaises()
     for (var n=0; n<list.length; n++)
         {
             
-            list[n].addEventListener("click",ocClick);
+            list[n].addEventListener("click",select);
             
         }
-    
+
 }
 
-function onClick(evt){
-    var rutaImg= evt.currentTarget.getElementsByClassName("imagen")[0].scr;
-    var elCodigo= evt.currentTarget.getElementsByClassName("phone_code")[0];
+function select(evt){
+    var rutaImg=evt.currentTarget.getElementsByClassName("contry-login")[0].src;
     localStorage.setItem('imgRuta',rutaImg);
-    localStorage.setItem('imgCodigo',elCodigo);
-    console.log(elCodigo);
+    
     console.log(rutaImg);
 }
