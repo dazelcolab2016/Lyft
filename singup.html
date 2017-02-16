@@ -6,14 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<!--<link rel="shortcut icon" href="image/favicon.png" type="image/png">-->
+	
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600%7CRoboto:300,400,500" media="all">
 	<link href="css/icomoon.css" rel="stylesheet">
 	<link href="css/font-awesome.min.css" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
 	<link href="css/queries.css" rel="stylesheet">
 	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="js/singUp.js">
 </head>
-<body>
+<body onclick="init()">
   <header>
       <div class="container">
          <div class="row">
@@ -32,7 +34,7 @@
            <div class="row">
             <div class="col-md-10 col-md-offset-1">
                 <div class="input-group">
-                  <span class="input-group-addon" id="basic-addon1">@</span>
+                  <span class="input-group-addon caret " data-toggle="dropdown" id="basic-addon1"><a href="contry.html"><img  id="flag-selected"src="img/banderas/pe.png" alt=""><span id="codigo"></span></a></span>
                   <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
                 </div>
             </div>

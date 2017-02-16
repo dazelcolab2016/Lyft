@@ -12,47 +12,37 @@
 	<link href="css/main.css" rel="stylesheet">
 	<link href="css/queries.css" rel="stylesheet">
 	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="js/onContry.js">
+	
 </head>
-<body>
+<body onload="init()">
   <header>
       <div class="container">
-         <div class="row">
-           <div class="col-xs-1 col-sm-1 col-md-1 retornar">
-           
-                <a class="fa fa-chevron-left" href="index.html" style="text-decoration:none; color:black;" > </a>
-           
-           </div>
+        <div class="row">
+        
             <div class="col-xs-9 col-sm-9 col-md-9">
                <h1 class="tituloSing text-center">Select Country</h1>
             </div>
-             <div class="col-xs-2 col-sm-2 col-md-2">
+            
+            <div class="col-xs-2 col-sm-2 col-md-2">
                <h1 class="tituloSing text-left">close</h1>
-               
-                
             </div>
-          </div> 
-           <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-                <input type="label" text="common countries">
-            </div>
+        </div> 
             <div class="row">
-               <div class="col-md-12">
-                <p  >Well send a text to verify your phone</p>
-                </div>
+            
+         <div class="lista-flags cnt-banderas">               
+                <ul type="label" class="alinear ulformat" id="lista-paises">Common Contries <br>
+                    <li class="contry-login" onclick="actualizarPais()"><img src="img/banderas/au.png" alt=""> Australia</li>
+                    <li class="contry-login"><img src="img/banderas/ca.png" alt=""> Canada</li>
+                    <li class="contry-login"><img src="img/banderas/cn.png" alt=""> China</li>
+                </ul>
             </div>
-        
         </div>
-             
-         </div>
-  </header>  
-  <section>
-      <div class="container">
-          <div class="row">
-              <div class=" col-xs-12 col-sm-12 col-md-10 col-md-offet-2 text-center albutton text-center">
-                  <button type="button" class="btn btn-lg alinear ">Next</button>
-              </div>
-          </div>
+ 
+           
       </div>
-  </section>
+  </header>  
+    
+  <script type="text/javascript" src="js/json.js"> </script>
 </body>
 </html>

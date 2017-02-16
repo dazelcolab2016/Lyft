@@ -69,8 +69,32 @@ section .albutton
 .retornar a
 {
    margin-top: 20px;
-    font-size: 40px;
+   font-size: 40px;
 
+}
+.ulformat
+{
+  background: #efeff4;  
+  height: 40px;
+  padding-left: 20px;
+   
+}
+.ulformat li
+{
+   height: 50px;
+   border-bottom: 2px solid #efeff4; 
+   text-decoration: none;
+   list-style: none;
+   
+   margin-top: 30px;
+}
+/*.cnt-banderas
+{
+    overflow: scroll;
+}*/
+
+.input-group{
+    margin-bottom: 20px;
 }
 
 
