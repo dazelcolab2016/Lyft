@@ -961,7 +961,8 @@ function init(){
     var htmlLista = document.getElementById("lista-paises");
     for (var i in lista)
         {
-        var html = '<li><a href="singup.html"><img src="'+lista[i].imagen+'" class="contry-login">'+lista[i].name +'</a></li>'; 
+        var html = '<li><a href="singup.html"><img src="'+lista[i].imagen+'" class="contry-login">'+lista[i].name +'</a> <span class="contry-codigo">'+lista[i].phone_code+'</span></li>'; 
+            
             htmlLista.innerHTML += html;
         }
 
@@ -973,14 +974,15 @@ function init(){
         {
             
             list[n].addEventListener("click",select);
-            
         }
 
 }
 
 function select(evt){
     var rutaImg=evt.currentTarget.getElementsByClassName("contry-login")[0].src;
+    var codPhone = evt.currentTarget.getElementsByClassName("contry-codigo")[0].textContent;
     localStorage.setItem('imgRuta',rutaImg);
-    
-    console.log(rutaImg);
+    localStorage.setItem('imgCodigo',codPhone);
+    //var span = document.getElementById("codigo");
+    console.log(codPhone);
 }
