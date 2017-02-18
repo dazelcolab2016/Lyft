@@ -104,16 +104,27 @@ section .albutton
 .mapLabel
 {
     width: 100%;
-    margin-bottom: 6px;
+    margin-bottom: 0px;
     background:#fff;
     border: 1px solid #dbd8cf;
     border-radius: 10px;
-    height: 45px;
+    height: 59px;
     padding: 0px;
-    text-align: left;
     
-      
 }
+#flag-selected
+{
+    width: 20px;
+    height: 20px;
+}
+p
+{
+    padding: 0px;
+    margin: 0px;
+    color: darkgray;
+    text-align: left;
+}
+
 
 
 
