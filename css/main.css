@@ -104,11 +104,11 @@ section .albutton
 .mapLabel
 {
     width: 100%;
-    margin-bottom: 0px;
+    margin-bottom: 5px;
     background:#fff;
     border: 1px solid #dbd8cf;
     border-radius: 10px;
-    height: 59px;
+    height: 50px;
     padding: 0px;
     
 }
@@ -123,8 +123,18 @@ p
     margin: 0px;
     color: darkgray;
     text-align: left;
+    align-items: center;
 }
-
+p i
+{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 0px;
+    
+}
+small
+{margin-top:  10px;
+margin-left: 30px;}
 
 
 
